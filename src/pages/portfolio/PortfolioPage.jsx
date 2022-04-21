@@ -1,8 +1,8 @@
 import { PortfolioList } from "../../elements/portfolio/PortfolioList";
 
-function PortfolioPage(props) {
+function PortfolioPage() {
     return (
-        <PortfolioList/>
+         <PortfolioList/>
     );
 }
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const portData = [
     {
@@ -35,7 +34,7 @@ function PortfolioList(props) {
                 {
                     portData.map((item, key) => (
                         
-                        <Link to={`/portfolio/${item.title.toLowerCase().replace(/\s/g, '-')}`} className='portfolio-item'
+                        <a href={`/portfolio/${item.title.toLowerCase().replace(/\s/g, '-')}`} className='portfolio-item'
                         key={key}
                         >
                             <div>
@@ -51,7 +50,7 @@ function PortfolioList(props) {
                                         </div>    
                                     </div>
                             </div> 
-                        </Link>   
+                        </a>   
                     ))
                 }
 

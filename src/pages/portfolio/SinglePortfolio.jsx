@@ -23,13 +23,13 @@ function SinglePortfolio({match}) {
     if(!portfolio) return <Error404/>
 
     return (
-        <PortfolioDetails
-         title={portfolio.title}
-         categories={portfolio.category.join(' - ')}
-         services={portfolio.category}
-         next={titleToURL(nextUrl())}
-         previous={titleToURL(prevUrl())}
-        />
+            <PortfolioDetails
+            title={portfolio.title}
+            categories={portfolio.category.join(' - ')}
+            services={portfolio.category}
+            next={titleToURL(nextUrl())}
+            previous={titleToURL(prevUrl())}
+            />
     );
 }
 

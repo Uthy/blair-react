@@ -21,7 +21,7 @@ function OffCanvasMenu(props) {
         <motion.div className="offcanvas-menu"
         initial={{x: '100vw'}}
         animate={{x:0}}
-        transition={{duration: 0.3, ease: 'easeInOut'}}
+        transition={{duration: 0.5, ease: 'easeInOut'}}
         exit={{
             x: '100vw',
             transition: { 

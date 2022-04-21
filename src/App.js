@@ -7,13 +7,15 @@ import Portfolio from './pages/portfolio/PortfolioPage';
 import SinglePortfolio from './pages/portfolio/SinglePortfolio';
 import ScrollToTop from "./components/ScrollToTop";
 import Error404 from "./pages/Error404";
+import AnimateRoute from "components/AnimateRoute";
 
 function App() {
   return (
     <Router>
     <Header/>
+    <ScrollToTop/>
       <div className="page-body">
-        <ScrollToTop>
+        <AnimateRoute>
           <Routes>
               <Route path="/" element={<Home/>} exact />
               <Route path="/about" element={<About/>} exact/>
@@ -21,7 +23,7 @@ function App() {
               <Route path="/portfolio/:name" element={<SinglePortfolio/>} exact/>
               <Route path="*" element={<Error404/>} />
           </Routes>
-        </ScrollToTop>
+          </AnimateRoute>
       </div>
     <Footer/>
     </Router>

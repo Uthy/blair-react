@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Error404(props) {
+function Error404() {
     return (
         <div className="error-page-inner bg_color--4">
         <div className="container">
@@ -11,7 +11,7 @@ function Error404(props) {
                         <h3 className="sub-title">Page not found</h3>
                         <span>The page you were looking for could not be found.</span>
                         <div className="error-button">
-                            <a className="rn-button-style--2 btn-solid" href="/">Back To Homepage</a>
+                            <a className="rn-button-style--2 btn-solid font-weight-bold bw-decor-link" href="/">Back To Homepage</a>
                         </div>
                     </div>
                 </div>

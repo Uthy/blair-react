@@ -1,7 +1,9 @@
+import AnimateRoute from 'components/AnimateRoute';
 import React from 'react';
 
 function About(props) {
     return (
+        <AnimateRoute>
         <div className='about'>
             <div className='about-wrap container'>
                 <div className='row'>
@@ -32,6 +34,7 @@ function About(props) {
                 </div>
             </div>
         </div>
+        </AnimateRoute>
     );
 }
 
