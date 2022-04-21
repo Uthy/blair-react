@@ -1,0 +1,52 @@
+.offcanvas-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: stretch;
+    background: rgb(18, 19, 20);
+    z-index: 9;
+    padding: 3em;
+    color: $white;
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        flex: 0 auto;
+        padding: 30px;
+        .menu-items {
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                .menu-item {
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 48px;
+                    font-weight: 700;
+                    position: relative;
+                    @media #{$lg-layout} {
+                        font-size: 60px;
+                    }
+                    @media #{$md-layout} {
+                        font-size: 40px;
+                    }
+                    @media #{$sm-layout} {
+                        font-size: 30px;
+                    }
+                    &:after {
+                        @include decor-link;
+                    }
+                    &:hover {
+                        @include decor-link-hover;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+/**************************************
+    Default Styles
+***************************************/
+
+@import './defaults/variables';
+@import './defaults/reset';
+@import './defaults/mixins';
+@import './defaults/typography';
+@import './defaults/animations';
+
+/**************************************
+    Common
+***************************************/
+
+@import './common/button';
+
+/**************************************
+    Header Styles
+***************************************/
+
+@import 'header/header';
+@import 'header/menu';
+
+/**************************************
+    Inner Styles
+***************************************/
+
+@import 'home/hero';
+
+/**************************************
+    Elements Styles
+***************************************/
+
+@import 'elements/portfolio';
+@import 'common/footer';
+
+/**************************************
+    Templates Styles
+***************************************/
+
+@import 'templates/about';

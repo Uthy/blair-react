@@ -1,0 +1,17 @@
+@mixin decor-link {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #f8f8f8;
+    bottom: 0.2em;
+    left: 0;
+    border-radius: 15px;
+    transition: width 0.3s ease-in-out;
+}
+
+@mixin decor-link-hover {
+    &:after {
+        width: 100%;
+    }
+}

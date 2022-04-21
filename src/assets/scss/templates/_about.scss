@@ -1,0 +1,25 @@
+/*====================
+    About Area 
+======================*/
+
+.connect {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    &-link {
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        &:after {
+            @include decor-link;
+            background: $body-color;
+            bottom: 0;
+        }
+        &:hover {
+            @include decor-link-hover;
+        }
+    }
+}

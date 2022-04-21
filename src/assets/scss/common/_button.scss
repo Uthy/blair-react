@@ -1,0 +1,12 @@
+.bw-decor-link {
+    font-weight: 500;
+    position: relative;
+    &:after {
+        @include decor-link;
+        background: $body-color;
+        bottom: 0;
+    }
+    &:hover {
+        @include decor-link-hover;
+    }
+}

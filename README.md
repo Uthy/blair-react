@@ -1,3 +1,7 @@
+# About
+
+This ia a basic react portfolio theme with a portfolio list page, single portfolio page,  homep and an about page. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

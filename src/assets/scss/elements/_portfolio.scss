@@ -1,0 +1,169 @@
+.portfolio {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &-wrap {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        .portfolio-item {
+            position: relative;
+            display: block;
+            color: inherit;
+            margin-bottom: 50px;
+            width: 55%;
+            @media #{$sm-layout} {
+                width: 100%;
+            }
+            .item-img {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                img {
+                    transition: transform 0.5s cubic-bezier(0.7, 0.63, 0.81, 0.74);
+                }
+            }
+            .item-info {
+                .item-title {
+                    font-size: 1.8em;
+                    padding: 10px 0 0;
+                    font-weight: 700;
+                    h3 {
+                        margin-bottom: 0;
+                    }
+                }
+                .item-meta {
+                    margin: 5px 0;
+                    font-size: .8em;
+                    line-height: 1.2em;
+                    font-weight: 400;
+                    letter-spacing: .15em;
+                    text-transform: uppercase;
+                }
+            }
+            &:hover {
+                .item-img {
+                    img {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+        a {
+            &:nth-child(even) {
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
+.portfolio-hero {
+    .container {
+        display: flex;
+        align-items: center;
+        height: 30vh;
+        @media #{$sm-layout} {
+            height: 25vh;
+        }
+        .title-wrap {
+            .title {
+                max-width: 800px;
+                margin: 5px 0;
+                text-transform: uppercase;
+                line-height: 1;
+                @media #{$sm-layout} {
+                    font-size: 30px;
+                }
+            }
+            .sub-title {
+                font-size: .8em;
+                line-height: 1.2em;
+                font-weight: 400;
+                letter-spacing: .15em;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.portfolio-overview {
+    .container {
+        .overview {
+            .heading {
+                font-size: $h5;
+            }
+        }
+        .meta {
+            display: grid;
+            grid-template-columns: 150px 150px;
+            grid-gap: 20px;
+            @media #{$sm-layout} {
+                grid-row-gap: 1em;
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .meta-item {
+                .heading {
+                    font-size: $h5;
+                }
+            }
+        }
+    }
+}
+
+.portfolio-info-grid {
+    position: relative;
+    .text-wrap {
+        display: flex;
+        position: relative;
+        align-items: stretch;
+        .text {
+            align-self: flex-start;
+            position: sticky;
+            top: 3em;
+            .heading {
+                margin: 0;
+                padding: 0;
+                font-size: $h4;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.portfolio-info-grid.text-right {
+    .row {
+        @media #{$sm-layout} {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+.navigation {
+    .pagination {
+        .page-item {
+            .nextPrevBtn {
+                border: 1px solid $body-color;
+                padding: 0.7rem 1rem;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background: $body-color;
+                    color: $white;
+                }
+            }
+            .view-all {
+                border: 1px solid $body-color;
+                padding: 0.7rem 1rem;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background: $body-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

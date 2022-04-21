@@ -1,0 +1,33 @@
+/*===============================
+    Hamburger Animation
+=================================*/
+
+@keyframes top {
+    0% {
+        transform: translateY(0px);
+    }
+    80% {
+        transform: translateY(12px);
+    }
+    90% {
+        transform: translateY(12px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(12px) rotate(45deg);
+    }
+}
+
+@keyframes bottom {
+    0% {
+        transform: translateY(0px);
+    }
+    80% {
+        transform: translateY(-8px);
+    }
+    90% {
+        transform: translateY(-8px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
